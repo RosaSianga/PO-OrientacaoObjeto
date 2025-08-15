@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Produto {
 
     // 1. Atributo
-    public String nome;
-    public double preco;
-    public int estoque;
+    private String nome;
+    private double preco;
+    private int estoque;
 
 
     // 2. Metódo
@@ -23,4 +23,39 @@ public class Produto {
             System.out.println("Estoque insuficiente para realizar a venda.");
         }
     }
+
+    // 3. Construtor
+    public Produto(String nome, double preco, int estoque) {
+        this.nome = nome;
+        this.preco = preco;
+        this.estoque = estoque;
+    }
+
+    // 4. Encapsulamento - Getters e Stters
+
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+    public void setPreco(double novoPreco) {
+        if (novoPreco > 0) {
+            this.preco = novoPreco;
+        } else {
+            System.out.println("Erro ao atualizar o preço");
+        }
+    }
+
+    public int getEstoque() {
+        return estoque;
+    }
+    public void setEstoque(int estoque) {
+        this.estoque = estoque;
+    }
+
 }

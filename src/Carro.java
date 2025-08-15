@@ -13,4 +13,10 @@ public class Carro {
         System.out.println("-------------------------------------");
 
     }
+
+    public Carro(String marca, String modelo, int ano){
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+    }
 }

@@ -1,7 +1,7 @@
 public class ContaBancaria {
 
-    public String titular;
-    public double saldo;
+    private String titular;
+    private double saldo;
 
 
     public void depositar(double valor){
@@ -16,5 +16,21 @@ public class ContaBancaria {
         } else {
             System.out.println("Saque recusado - Saldo é insuficiente");
         }
+    }
+
+    public ContaBancaria(String titular, double saldo){
+        this.titular = titular;
+        this.saldo = saldo;
+    }
+
+    public String getTitular() {
+        return titular;
+    }
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+
+    public double getSaldo() {
+        return saldo;
     }
 }
