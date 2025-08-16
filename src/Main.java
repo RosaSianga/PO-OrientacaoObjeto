@@ -12,10 +12,12 @@ public class Main {
         // Private(liberado apenas para quem eu desejo e Protected(Protegido de acesso).
         //      Atributos private só podem ser modificados dentro da própria classe através de metódo (GET e SET),
         //neste caso muito comum que todos os atributos sejam private na sua declaração.
+        // * Herança serve para reutilizar e herdar atributos e metódos de outras classes.
+        // palavra EXTENDS representa a herança entre uma classe pai e uma filha.
 
 //  1. Criando a Classe Música (Apenas Atributos)
 
-        Musica musica = new Musica("Bohemian Rhapsody", "Queen",355);
+        Musica musica = new Musica("Bohemian Rhapsody", "Queen", 355);
 //        musica.titulo = "Bohemian Rhapsody";
 //        musica.artista = "Queen";
 //        musica.duracaoEmSegundos = 355;
@@ -101,6 +103,28 @@ public class Main {
 
         System.out.println("Após a batalha");
         jogo.exibirStatus();
+
+//  1. Protegendo Dados do Aluno
+        Alunos alunos = new Alunos("Lucas Silva", "202401");
+        System.out.println("Nome do aluno: " + alunos.getNome());
+        System.out.println("Matrícula: " + alunos.getMatricula());
+        System.out.println("-----------------------------");
+
+//  2. Preço Válido para o Produto
+
+        Produtos produtos = new Produtos("Caneca");
+
+        produtos.setPreco(25.50);
+        System.out.println("Preço da " + produtos.getNome() + " é : " + produtos.getPreco());
+        System.out.println("-----------------------------");
+
+        produtos.setPreco(13.80);
+        System.out.println("Preço da " + produtos.getNome() + " é : " + produtos.getPreco());
+        System.out.println("-----------------------------");
+
+        produtos.setPreco(-10.0);
+        System.out.println("Preço final da " + produtos.getNome() + " é: " + produtos.getPreco());
+        System.out.println("-----------------------------");
 
     }
 }
