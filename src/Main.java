@@ -14,6 +14,8 @@ public class Main {
         //neste caso muito comum que todos os atributos sejam private na sua declaração.
         // * Herança serve para reutilizar e herdar atributos e metódos de outras classes.
         // palavra EXTENDS representa a herança entre uma classe pai e uma filha.
+        // as variaveis criadas para classe que irão utilizar herança será protected...
+        // * Abstração é focar no que ele faz e não como ele faz. 
 
 //  1. Criando a Classe Música (Apenas Atributos)
 
@@ -126,5 +128,27 @@ public class Main {
         System.out.println("Preço final da " + produtos.getNome() + " é: " + produtos.getPreco());
         System.out.println("-----------------------------");
 
+// Exercicio de Herança
+
+//  1. Pessoa e Atleta
+        Atleta atleta = new Atleta("Neymar Jr.", "Futebol");
+        System.out.println("Nome: " + atleta.getNome());
+        System.out.println("Esporte: " + atleta.getEsporte());
+        System.out.println("-----------------------------");
+
+//  2. Hierarquia de Veículos
+        Carros carros = new Carros("Ford", 4);
+        Bicicleta bicicleta = new Bicicleta("Caloi", 18);
+
+        System.out.println("Carro: " + carros.getMarca() + " com " + carros.getNumeroDePortas() + " portas.");
+        System.out.println("Bicicleta: " + bicicleta.getMarca() + " com " + bicicleta.getNumeroDeMarchas() + " marchas.");
+        System.out.println("------------------------------------------------------");
+
+//  3. Funcionário e Gerente
+        Gerente gerente = new Gerente("Joana", 15000.0, "Gerente de Vendas");
+        System.out.println("Nome: " + gerente.getNome());
+        System.out.println("Salário: " + gerente.getSalario());
+        System.out.println("Departamento: " + gerente.getDepartamento());
+        System.out.println("---------------------------------------------");
     }
 }
