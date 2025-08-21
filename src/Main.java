@@ -15,7 +15,14 @@ public class Main {
         // * Herança serve para reutilizar e herdar atributos e metódos de outras classes.
         // palavra EXTENDS representa a herança entre uma classe pai e uma filha.
         // as variaveis criadas para classe que irão utilizar herança será protected...
-        // * Abstração é focar no que ele faz e não como ele faz. 
+        // * Abstração é focar no que ele faz e não como ele faz.  - Interface
+        // Utilizando a palavra IMPLEMENTS na classe que irá utilizar a interface.
+        // Ex: Não importa como funciona o motor dos carros de cada marca... todos possuem uma embreagem com o
+        // mesmo funcionamento.. ou seja não importa como é feito por trás... o importante é fazer.
+        // tbm utilizada para separar as coisa e evitar o acoplamento das classe.
+        // * Polimorfismo - é um metódo fazer coisas diferentes, maioria das vezes utilizado em Interface.
+        // utilizando a tag @Override (Sobreescrever) no metodo declarado na classe.
+
 
 //  1. Criando a Classe Música (Apenas Atributos)
 
